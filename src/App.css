@@ -1,62 +1,104 @@
-body{
+body {
   color: aliceblue;
-  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(9, 10, 36);
   text-align: center;
-  
+
 
 }
-.barra{
+
+.barra {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
 }
-.texto{
-  background-color: rgba(0, 0, 0, 0.37);
-  padding: 5px;
-  color: aliceblue;
-}
-.add{
-  padding: 5px;
-}
-.container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
 
-  background-color: rgb(21, 36, 85);
-  max-width: 600px;
-  
+.texto {
+  padding: 5px;
+  background-color: rgb(9, 10, 36);
+  width: 250px;
+  color: aliceblue;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+}
+
+input:focus {
+  outline: none !important
+}
+
+
+
+.container {
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 400px;
+
   padding: 20px;
 }
 
-ul  {
+.container h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 8px;
+}
+button {
+  cursor: pointer;
+  background-color: aliceblue;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  padding: 10px ;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+.botones button{
+  margin-left: 5px;
+}
+.add  {
+  width: 100px;
+  border-radius: 10px;
+}
+ul {
   padding: 1rem;
   margin: 0 auto;
   margin-top: 2rem;
-  width: 20rem;
   border-radius: 5%;
-  
+  max-height: 200px;
+  overflow-y: auto;
+
 }
 
 li input {
-  background-color: rgba(169, 169, 169, 0);
-  color: aliceblue;
+  
   overflow: auto;
 }
-li span{
+
+li span {
   text-align: left;
   width: 200px;
-  overflow:hidden;
+  overflow: hidden;
 }
-li{
+
+li {
   list-style: none;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
-li button{
- color: rgb(2, 2, 2);
- padding: 5px;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+width: 12px; 
+}
+::-webkit-scrollbar-track {
+background: rgba(46, 46, 46, 0.356)
+}
+::-webkit-scrollbar-thumb {
+background:  #f1f1f13b; 
+
+}
+::-webkit-scrollbar-thumb:hover {
+background: #ffffff; 
+cursor: pointer;
 }

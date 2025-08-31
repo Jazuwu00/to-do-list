@@ -98,9 +98,9 @@ const TodoList: React.FC = () => {
         <input className="texto" type="text" value={TextTodo} onChange={CambiarInput} />
         <button className="add" onClick={AgregarTodo}>Añadir</button>
       </div>
-      
+    
 
-      <ul className='buttons'>
+      <ul className='list'>
         {todos.map(todo => (
           <li key={todo.id}>
             {editingTodoId === todo.id ? (
@@ -121,7 +121,7 @@ const TodoList: React.FC = () => {
                 >
                   {todo.text}
                 </span>
-               <div> <button onClick={() => EditarTodo(todo.id)}>Editar</button>
+               <div className='botones'> <button onClick={() => EditarTodo(todo.id)}>Editar</button>
                 <button onClick={() => EliminaTodo(todo.id)}>Borrar</button></div>
               </>
             )}
